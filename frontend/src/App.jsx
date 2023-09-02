@@ -1,12 +1,10 @@
-import './App.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home'
-import Logout from './pages/Logout'
 import Login from './pages/Login'
 import Header from './components/Header'
 import PrivateRoute from './utils/PrivateRoute'
 import { AuthProvider } from './context/AuthContext'
-
+import Register from './pages/Register'
 
 function App() {
 
@@ -14,10 +12,10 @@ function App() {
       <Router>
         <AuthProvider>
           <Header></Header>
-          <PrivateRoute path="/" element={<Home/>}/>
           <Routes>
+            <Route path="/" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
-            {/* <Route path="/logout" element={<Logout/>}/> */}
+            <Route path="/register" element={<Register/>}/>
           </Routes>
         </AuthProvider>
       </Router>
