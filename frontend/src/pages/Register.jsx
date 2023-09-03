@@ -43,9 +43,9 @@ const Register = () => {
                     password2: formData.password2
                }),
           })
-          let data = await response.json()
+          // let data = await response.json()
           if (response.status === 201){
-               console.log();('User Created Successfully')
+               console.log('User Created Successfully')
                navigation('/login')
           } else {
                alert('Something error in ur validation')
