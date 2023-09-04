@@ -24,6 +24,7 @@ const Header = () => {
                     )}
                     <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} to='/register'>Register</Link>
                     <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} to='/dashboard'>Dashboard</Link>
+                    <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} to='/admin'>Admin</Link>
                     {user && <p>Hello {user.username}</p>}
             </Navbar.Collapse>
           </Container>
