@@ -11,7 +11,7 @@
       getProfile()
     },[])
     let getProfile = async () => {
-      let response = await fetch('http://127.0.0.1:8000/api/profile/',{
+      let response = await fetch('http://127.0.0.1:8000/api/home/',{
         method:'GET',
         headers:{
           'Content-Type' : 'application/json',
@@ -23,8 +23,7 @@
         setProfile(data)
       } else if(response.statusText === 'Unauthorized'){
         logoutUser()
-      }
-      
+      } 
     }
     const cards = profiles && profiles.length > 0 ? profiles.map( profile => (
       <Col key={profile.id} lg={ 6 }>

@@ -23,6 +23,7 @@ const Header = () => {
                          <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} onClick={logoutUser}>Logout</Link> 
                     )}
                     <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} to='/register'>Register</Link>
+                    <Link style={{textDecoration:"None",color:"black",marginLeft:"1%"}} to='/dashboard'>Dashboard</Link>
                     {user && <p>Hello {user.username}</p>}
             </Navbar.Collapse>
           </Container>

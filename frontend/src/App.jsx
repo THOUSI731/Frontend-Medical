@@ -5,6 +5,7 @@ import Header from './components/Header'
 import PrivateRoute from './utils/PrivateRoute'
 import { AuthProvider } from './context/AuthContext'
 import Register from './pages/Register'
+import Dashboard from './pages/Dashboard'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
+            <Route path="/dashboard" element={<Dashboard/>}/>
           </Routes>
         </AuthProvider>
       </Router>
